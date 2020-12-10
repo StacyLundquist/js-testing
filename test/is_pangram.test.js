@@ -9,8 +9,8 @@ describe('isPangram()', () => {
     // Arrange
     const text = 'the quick brown fox jumps over the lazy dog';
 
-    // Act
-    // Assert
+    // Act & Assert
+    expect(isPangram(text)).toBeTruthy();
   });
 
   test('works with "abcdefghijklmnopqrstuvwxyz"', () => {
@@ -19,6 +19,7 @@ describe('isPangram()', () => {
     // Act
 
     // Assert
+    expect(isPangram(text)).toBeTruthy();
 
   });
 
@@ -29,6 +30,7 @@ describe('isPangram()', () => {
     // Act
 
     // Assert
+    expect(isPangram(text)).toBeFalsy();
 
   });
 
@@ -38,6 +40,7 @@ describe('isPangram()', () => {
     // Act
 
     // Assert
+    expect(isPangram(text)).toBeFalsy();
 
   });
 
@@ -48,6 +51,7 @@ describe('isPangram()', () => {
     // Act
 
     // Assert
+    expect(isPangram(text)).toBeTruthy();
 
   });
 
@@ -58,6 +62,7 @@ describe('isPangram()', () => {
     // Act
 
     // Assert
+    expect(isPangram(text)).toBeTruthy();
 
   });
 
