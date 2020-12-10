@@ -1,10 +1,8 @@
+const alphabet = 'abcdefghijklmnopqrestuvwxyz'.split("")
+
 const isPangram = function(text) {
-    const input = text.toLowerCase()
-    const letters = input.match(/[a-z]/g);
-    const letterCount = new Set(letters);
-    if (letterCount.length === 26) {
-        return true;
-    }
+    const letters = text.toLowerCase();
+    return alphabet.every(x => text.includes(x));
 };
 
 module.exports = isPangram;
